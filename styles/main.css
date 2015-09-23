@@ -1,0 +1,29 @@
+.bright-yellow{
+	background-color: #fbf481;
+	color: #1fbcab;
+}
+
+.bright-blue{
+	background-color: #1fbcab;
+	color: #fbf481;
+}
+.too-smooth{
+
+}
+.inky{
+	background-color: #1B2022;
+	color:   #fbf481;
+}
+.bleaky{
+	background-color: #ffffff;
+	color:   #1B2022;
+}
+.centred {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+.mountain{
+	background-image: url("img/mountain.jpg");
+	font-family: 'Ultra', serif;
+}
