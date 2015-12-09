@@ -1,28 +1,257 @@
-.bright-yellow{
-	background-color: #fbf481;
-	color: #1fbcab;
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
 }
 
-.bright-blue{
-	background-color: #1fbcab;
-	color: #fbf481;
-}
-.too-smooth{
 
+
+/* Style for our header texts
+* --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
 }
-.inky{
-	background-color: #1B2022;
-	color:   #fbf481;
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
 }
-.bleaky{
-	background-color: #ffffff;
-	color:   #1B2022;
+p{
+	font-size: 2em;
 }
-.centred {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
+h1{
+	font-size: 5em;
+	font-family: arial,helvetica;
+	color: #fff;
+	margin:0;
+	padding:0;
 }
-.mountain{
-	font-family: 'Ultra', serif;
+
+li {
+	font-size: 3em;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section{
+	background-size: cover;
+}
+.slide{
+	background-size: cover;
+}
+
+/* Defining each section background and styles
+* --------------------------------------- */
+#section0{
+	background-image: url(../img/mountain.jpg);
+	padding: 30% 0 0 0;
+}
+#section1{
+	background-image: url(../img/fogmountain.png);
+	padding: 20% 0 0 0;
+	-webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+}
+
+#section1 p {
+	font-size: 2.5em;
+}
+/*  */
+.section1body {
+	background-color: #ecf0f1;
+	opacity: .5;
+}
+
+#section2{
+	background-image: url(../img/fogofwar.png);
+	padding: 6% 0 0 0;
+}
+
+#section3{
+	background-image: url(../img/thelighthouse.png);
+	padding: 6% 0 0 0;
+}
+#section3 h1{
+	text-shadow: 2px 2px 4px #34495E;
+}
+#section4 {
+	background-image: url(../img/fireside.jpg);
+}
+
+/*Adding background for the slides
+* --------------------------------------- */
+.slide{
+	color: #E4F1FE;
+}
+.slide h1 {
+	color: #E4F1FE;
+}
+.slide h2 {
+	color: #E4F1FE;
+}
+.slide p{
+	color: #FDE3A7;
+}
+#slide2{
+	background-image: url(../imgs/bg5.jpg);
+	padding: 6% 0 0 0;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+	color: #fff;
+}
+
+/* Typography */
+@font-face {font-family: ChunkFiveRegular;
+	src: url('../fonts/Chunkfive.otf');
+}
+@font-face {font-family: Distractor;
+	src: url('../fonts/Distractor-Roman.otf');
+}
+@font-face{font-family: HomesteadRegular;
+	src: url('../fonts/Homestead-Regular.ttf');
+}
+@font-face{
+	font-family: aventura;
+	src: url('../fonts/Aventura-Bold.otf');
+}
+@font-face{
+	font-family: Futura;
+	src: url('../fonts/Futura Medium.ttf');
+}
+@import url(https://fonts.googleapis.com/css?family=Bevan);
+
+.homestead {
+	font-family: HomesteadRegular;
+}
+.chunkfive {
+	font-family: ChunkFiveRegular;
+}
+.distractor {
+	font-family: Distractor;
+}
+.bevan {
+	font-family: 'Bevan', cursive;
+}
+
+.futura {
+	font-family: Futura;
+}
+.aventura {
+	font-family: 'aventura';
+}
+
+.ultra {
+	font-family: 'Ultra';
+}
+
+/* COLORS */
+.aliceBlue {
+	color: #E4F1FE;
+}
+.ebonyClay {
+	color: #22313f;
+}
+.green{
+	color: #8ba987;
+}
+.blue {
+	color: #3e5960;
+}
+.red {
+	color: #c36b69;
+}
+
+.peterRiver{
+	color: #3498db;
+}
+
+.porcelain {
+	color: #ECF0F1;
+}
+
+.midnightBlue {
+	color: #2c3e50;
+}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
 }
