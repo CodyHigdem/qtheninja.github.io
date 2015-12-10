@@ -120,13 +120,16 @@ li {
 }
 
 #section3{
-	background-image: url(../img/thelighthouse.png);
+	background-image: url(../img/51h.jpg);
 	padding: 6% 0 0 0;
 }
 #section3 h1{
 	text-shadow: 2px 2px 4px #34495E;
 }
-#section4 {
+#section4{
+  background-image: url(../img/1h.jpg);
+}
+#section5 {
 	background-image: url(../img/fireside.jpg);
 }
 
@@ -149,11 +152,6 @@ li {
 	padding: 6% 0 0 0;
 }
 
-/* Bottom menu
-* --------------------------------------- */
-#infoMenu li a {
-	color: #fff;
-}
 
 /* Typography */
 @font-face {font-family: ChunkFiveRegular;
@@ -226,6 +224,14 @@ li {
 
 .midnightBlue {
 	color: #2c3e50;
+}
+
+.orange {
+  color: #efa72e
+}
+
+.black {
+  color: #2d2e32;
 }
 
 /* xs < 768 */
